@@ -56,9 +56,7 @@ export const handleUpload = async (req: Request, res: Response) => {
         return res.status(200).json({
           message: 'File processed successfully',
           downloadurl: `${
-            process.env.CLIENT_URl
-              ? 'http://localhost:3000'
-              : process.env.CLIENT_URl
+            process.env.CLIENT_URl || 'https://fullstack-test-opal.vercel.app/'
           }/files/${outputFileName}`,
         })
       })
