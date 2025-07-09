@@ -8,7 +8,10 @@ const {
 const cors = require('cors')
 router.use(
   cors({
-    origin: process.env.CLIENT_URl || 'http://localhost:3000',
+    origin:
+      process.env.CLIENT_URl ||
+      'https://fullstack-test-opal.vercel.app/' ||
+      'http://localhost:3000',
     credentials: true,
   })
 )
