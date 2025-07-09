@@ -8,7 +8,7 @@ const {
 const cors = require('cors')
 router.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: process.env.CLIENT_URl || 'http://localhost:3000',
     credentials: true,
   })
 )

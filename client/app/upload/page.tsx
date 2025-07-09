@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import axios from '../../util/axios'
 
-export default function upload() {
+export default function Upload() {
   const [file, setFile] = useState<File | null>(null)
   const [uploading, setUpLoading] = useState(false)
   const [downloadurl, setDownloadUrl] = useState('')
