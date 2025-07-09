@@ -55,7 +55,11 @@ export const handleUpload = async (req: Request, res: Response) => {
 
         return res.status(200).json({
           message: 'File processed successfully',
-          downloadurl: `http://localhost:5000/files/${outputFileName}`,
+          downloadurl: `${
+            process.env.CLIENT_URl
+              ? 'http://localhost:3000'
+              : process.env.CLIENT_URl
+          }/files/${outputFileName}`,
         })
       })
       .on('error', (err) => {
