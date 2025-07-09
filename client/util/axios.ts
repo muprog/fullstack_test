@@ -1,7 +1,10 @@
 import axios from 'axios'
 
 const instance = axios.create({
-  baseURL: process.env.BACKEND_URL || 'http://localhost:5000',
+  baseURL:
+    process.env.BACKEND_URL ||
+    'https://fullstack-test-b8tj.onrender.com/' ||
+    'http://localhost:5000',
 })
 
 instance.interceptors.request.use((config) => {
