@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+.upload {
+  @apply cursor-pointer;
+}
+.boxes {
+  @apply p-10 border-0 shadow-white shadow-2xl/20  bg-blue-100;
+}

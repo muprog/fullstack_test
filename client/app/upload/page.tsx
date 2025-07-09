@@ -29,15 +29,15 @@ export default function upload() {
   }
   return (
     <div className='pt-10 flex justify-center'>
-      <div className='border py-10 px-2'>
+      <div className='boxes'>
         <div>
           <input type='file' accept='.csv' onChange={handleChange} />
         </div>
         <div>
           <button
-            className='border px-2 rounded-full'
+            className='border px-2 rounded-full upload'
             onClick={handleUpdload}
-            disabled={!file || uploading}
+            disabled={uploading}
           >
             {uploading ? 'uploading' : 'upload'}
           </button>
