@@ -4,4 +4,5 @@ client/.env
 client/.env.local
 server/node_modules/
 server/dist/
+server/.env
 server/.env.local
